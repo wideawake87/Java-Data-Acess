@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 5 Dec, 2013 12:09:18 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping default-lazy="false">
+    <class name="Employers" table="employees">
+        <id name="id" type="int">
+            <column name="id" />
+            <generator class="assigned" />
+        </id>
+        <property generated="never" lazy="false" name="name"
+                  type="java.lang.String">
+            <column name="name" />
+        </property>
+        <property generated="never" lazy="false" name="last_name"
+                  type="java.lang.String">
+            <column name="last_name" />
+        </property>
+        <property generated="never" lazy="false" name="address"
+                  type="java.lang.String">
+            <column name="address" />
+        </property>
+        <property generated="never" lazy="false" name="dob"
+                  type="java.lang.Integer">
+            <column name="dob" />
+        </property>
+        <property generated="never" lazy="false" name="email"
+                  type="java.lang.String">
+            <column name="email" />
+        </property>
+        <property generated="never" lazy="false" name="phone_number"
+                  type="java.lang.Integer">
+            <column name="phone_number" />
+        </property>
+        <property generated="never" lazy="false" name="salary"
+                  type="java.lang.Integer">
+            <column name="salary" />
+        </property>
+    </class>
+</hibernate-mapping>
